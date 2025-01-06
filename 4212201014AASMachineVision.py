@@ -26,12 +26,12 @@ from tqdm import tqdm
 train_data_path = 'C:/Users/hp/Documents/archive/emnist-bymerge-train.csv'
 val_data_path = 'C:/Users/hp/Documents/archive/emnist-bymerge-test.csv'
 
-"""***Load a subset of 3000 samples for training and validation for faster processing***
+"""***Load a subset of 2000 samples for training and validation for faster processing***
 
 """
 
-data_train = pd.read_csv(train_data_path, header=None, nrows=3000)
-data_val = pd.read_csv(val_data_path, header=None, nrows=3000)
+data_train = pd.read_csv(train_data_path, header=None, nrows=2000)
+data_val = pd.read_csv(val_data_path, header=None, nrows=2000)
 print("Dataset loaded successfully.")
 
 """***Preprocessing function for raw pixel Data***
