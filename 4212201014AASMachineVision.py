@@ -92,7 +92,7 @@ val_loader = DataLoader(val_dataset, batch_size=4, shuffle=False)
 # Initialize a pretrained AlexNet model for transfer learning
 
 model = models.alexnet(pretrained=True)
-model.classifier[6] = nn.Linear(4096, 200)
+model.classifier[6] = nn.Linear(4096, 47)
 
 # Freeze feature extraction layers to only train the classifier
 
